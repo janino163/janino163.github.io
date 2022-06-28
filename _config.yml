@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Jose Nino"
 title_separator          : "-"
 name                     : &name "Jose Nino"
-description              : &description "PH.D student at Cornell Unversity in Mechanical Engineering"
+description              : &description "Ph.D canidate at Cornell Unversity in Mechanical Engineering"
 url                      : https://janino163.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "janino163/janino163.github.io"
