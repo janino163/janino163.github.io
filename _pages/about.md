@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Homepage"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,5 @@ redirect_from:
   - /about.html
 ---
 
-# Research Interests
-
-- Under construction
+PH.D canidate at the Mechanical Engineering Department at Cornell University, advised by [Mark Campbell](https://campbell.mae.cornell.edu/). Before arriving at Cornell I completed my Bachelor of Science in Mechanical Engineering at Purdue University.
 
