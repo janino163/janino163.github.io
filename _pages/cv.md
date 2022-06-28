@@ -12,15 +12,15 @@ redirect_from:
 Education
 ======
 * B.S. in Mechanical Engineering, Purdue University, 2017
-* Ph.D in Mechanical Engineering, Cornell University, 2022 (expected)
+* Ph.D in Mechanical Engineering, Cornell University, 2023 (expected)
 
-Work experience
+Research Experience
 ======
-* Under Construction
-  
-Skills
-======
-* Under Construction
+Campbell Research Group at Cornell University
+- Graduate Research Assistant December 2018 - Present
+
+Pan Lab at Purdue University
+- Undergraduate Research Assistant August 2016 - April 2017
 
 Publications
 ======
@@ -28,18 +28,12 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
 Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Programming Skills
 ======
-* Under Construction
+Python, ROS, Nvidia Driveworks, C++, Matlab, LaTeX
