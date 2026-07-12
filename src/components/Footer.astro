@@ -1,0 +1,20 @@
+---
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/janino163' },
+  { label: 'Twitter', href: 'https://twitter.com/josenino22' },
+  { label: 'Email', href: 'mailto:jan268@cornell.edu' },
+];
+---
+
+<footer class="border-t border-zinc-200 dark:border-zinc-800">
+  <div class="mx-auto flex w-full max-w-2xl flex-col items-center gap-3 px-4 py-8 text-sm text-zinc-500 sm:flex-row sm:justify-between sm:px-6 dark:text-zinc-400">
+    <p>&copy; {new Date().getFullYear()} Jose Nino</p>
+    <div class="flex gap-4">
+      {socials.map((social) => (
+        <a href={social.href} class="hover:text-accent-600 dark:hover:text-accent-400">
+          {social.label}
+        </a>
+      ))}
+    </div>
+  </div>
+</footer>

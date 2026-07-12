@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --color-accent-50: oklch(0.97 0.04 195);
+  --color-accent-400: oklch(0.78 0.12 195);
+  --color-accent-500: oklch(0.68 0.13 195);
+  --color-accent-600: oklch(0.58 0.12 195);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.prose-content h2 {
+  @apply mt-10 mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100;
+}
+
+.prose-content h3 {
+  @apply mt-8 mb-3 text-lg font-semibold text-zinc-900 dark:text-zinc-100;
+}
+
+.prose-content p {
+  @apply mb-4 leading-7 text-zinc-700 dark:text-zinc-300;
+}
+
+.prose-content ul {
+  @apply mb-4 list-disc space-y-1 pl-6 text-zinc-700 dark:text-zinc-300;
+}
+
+.prose-content a {
+  @apply text-accent-600 underline decoration-accent-500/40 underline-offset-2 hover:decoration-accent-500 dark:text-accent-400;
+}
+
+.prose-content code {
+  @apply rounded bg-zinc-100 px-1.5 py-0.5 font-mono text-sm text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200;
+}
+
+.prose-content pre {
+  @apply mb-4 overflow-x-auto rounded-lg bg-zinc-900 p-4 text-sm text-zinc-100;
+}
+
+.prose-content pre code {
+  @apply bg-transparent p-0 text-inherit;
+}

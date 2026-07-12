@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  repoUrl?: string;
+  liveUrl?: string;
+  stack: string[];
+}
+
+const { title, description, repoUrl, liveUrl, stack } = Astro.props;
+---
+
+<div class="group rounded-xl border border-zinc-200 p-5 transition hover:-translate-y-0.5 hover:border-accent-500/50 hover:shadow-md dark:border-zinc-800 dark:hover:border-accent-500/40">
+  <h2 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">{title}</h2>
+  <p class="mt-1.5 text-sm leading-6 text-zinc-600 dark:text-zinc-400">{description}</p>
+  {stack.length > 0 && (
+    <ul class="mt-3 flex flex-wrap gap-2">
+      {stack.map((item) => (
+        <li class="rounded-full bg-zinc-100 px-2.5 py-0.5 font-mono text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+          {item}
+        </li>
+      ))}
+    </ul>
+  )}
+  <div class="mt-4 flex gap-4 text-sm font-medium">
+    {repoUrl && (
+      <a href={repoUrl} class="text-accent-600 hover:underline dark:text-accent-400">Code &rarr;</a>
+    )}
+    {liveUrl && (
+      <a href={liveUrl} class="text-accent-600 hover:underline dark:text-accent-400">Live &rarr;</a>
+    )}
+  </div>
+</div>
